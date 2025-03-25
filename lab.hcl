@@ -1,10 +1,10 @@
 resource "lab" "main" {
-    title = "Minimal Lab New title 2"
+    title = "Minimal Lab"
     description = "For testing"
 
     layout "simple" {
         default = true
-        reference = resource.layout.simple
+        source = resource.layout.simple
 
         instructions {
             panel = "instructions"
@@ -16,12 +16,12 @@ resource "lab" "main" {
             title = "Introduction"
 
             page "instructions" {
-                reference = resource.page.instructions
+                source = resource.page.instructions
             }
         }
     }
 
     settings {
-        theme = "original"
+        theme = "modern-dark"
     }
 }
