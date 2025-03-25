@@ -1,6 +1,6 @@
 resource "lab" "main" {
   title       = "Minimal Lab"
-  description = "For testing changing description only happy"
+  description = "For testing changing description only happy with the new Transform bug fix"
 
   layout "simple" {
     default   = true
