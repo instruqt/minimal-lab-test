@@ -1,27 +1,40 @@
 resource "lab" "main" {
-    title = "Minimal Lab"
-    description = "For testing"
+  title       = "Minimal Lab"
+  description = "For testing asda "
 
-    layout "simple" {
-        default = true
-        reference = resource.layout.simple
+  layout "simple" {
+    default   = true
+    reference = resource.layout.simple
 
-        instructions {
-            panel = "instructions"
-        }
+    instructions {
+      panel = "instructions"
     }
+  }
 
-    content {
-        chapter "introduction" {
-            title = "Introduction"
+  content {
+    chapter "introduction" {
+      title = "Introduction"
 
-            page "instructions" {
-                reference = resource.page.instructions
-            }
-        }
+      page "instructions" {
+        reference = resource.page.instructions
+      }
     }
+  }
 
-    settings {
-        theme = "modern-dark"
+  settings {
+    theme = "modern-dark"
+    timelimit {
+      duration  = 15
+      extend    = 0
+      showTimer = true
     }
+    idle {
+      enabled     = true
+      timeout     = 5
+      showWarning = true
+    }
+    controls {
+      showStop = true
+    }
+  }
 }
