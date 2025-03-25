@@ -20,4 +20,8 @@ resource "lab" "main" {
             }
         }
     }
+
+    settings {
+        theme = "original"
+    }
 }
