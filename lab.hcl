@@ -4,7 +4,7 @@ resource "lab" "main" {
 
     layout "simple" {
         default = true
-        source = resource.layout.simple
+        reference = resource.layout.simple
 
         instructions {
             panel = "instructions"
@@ -16,7 +16,7 @@ resource "lab" "main" {
             title = "Introduction"
 
             page "instructions" {
-                source = resource.page.instructions
+                reference = resource.page.instructions
             }
         }
     }
