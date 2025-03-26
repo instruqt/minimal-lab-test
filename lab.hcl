@@ -1,5 +1,5 @@
 resource "lab" "main" {
-  title       = "Minimal Lab new title 3"
+  title       = "Minimal Lab new title 4"
   description = "For testing changing description only happy"
 
   layout "simple" {
