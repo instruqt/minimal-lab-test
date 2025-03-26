@@ -1,6 +1,6 @@
 resource "lab" "main" {
-  title       = "Minimal Lab new title :happy:"
-  description = "For testing changing description only happy"
+  title       = "Minimal Lab new title :happy: :kuma:"
+  description = "For testing changing description only happy :nice:"
 
   layout "simple" {
     default   = true
