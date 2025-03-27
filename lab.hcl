@@ -1,6 +1,6 @@
 resource "lab" "main" {
-  title       = "Minimal Lab Test"
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  title       = "Wololo"
+  description = "Maybe something here"
 
   layout "simple" {
     default   = true
