@@ -1,6 +1,6 @@
 resource "lab" "main" {
-  title       = "Minimal Lab"
-  description = "For testing changing description only happy"
+  title       = "Minimal Lab test"
+  description = "For testing changing description only happy test"
 
   layout "simple" {
     default   = true
@@ -22,16 +22,16 @@ resource "lab" "main" {
   }
 
   settings {
-    theme = "modern-dark"
+    theme = "original"
     timelimit {
-      duration  = 15
-      extend    = 0
-      showTimer = true
+      duration  = 23
+      extend    = 10
+      showTimer = false
     }
     idle {
-      enabled     = true
-      timeout     = 5
-      showWarning = true
+      enabled     = false
+      timeout     = 0
+      showWarning = false
     }
     controls {
       showStop = true
