@@ -1,4 +1,4 @@
 resource "page" "instructions" {
   title = "Instructions"
-  file  = [["pages/instructions.md"]]
+  file  = [[["pages/instructions.md"]]]
 }

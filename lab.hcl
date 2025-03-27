@@ -25,13 +25,13 @@ resource "lab" "main" {
     theme = "original"
     timelimit {
       duration  = 23
-      extend    = 10
-      showTimer = false
+      extend    = 0
+      showTimer = true
     }
     idle {
-      enabled     = false
-      timeout     = 0
-      showWarning = false
+      enabled     = true
+      timeout     = 6
+      showWarning = true
     }
     controls {
       showStop = true
