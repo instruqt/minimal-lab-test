@@ -18,8 +18,8 @@ resource "lab" "main" {
       page "instructions" {
         reference = resource.page.instructions
       }
-      page "untitled-page-1" {
-        title     = "Untitled page 1"
+      page "untitled-page-1-renamed" {
+        title     = "Untitled page 1 renamed"
         reference = resource.page.untitled-page-1
       }
     }
