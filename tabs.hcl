@@ -18,3 +18,7 @@ resource "virtual_browser" "vbdocs" {
   url   = "https://docs.instruqt.com"
   agent = "chrome"
 }
+
+resource "note" "note1" {
+  file = "contents/note1.md"
+}
