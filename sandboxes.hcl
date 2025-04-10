@@ -1,19 +1,38 @@
-
-resource "network" "onprem" {
-  subnet = "10.6.0.0/16"
+resource "network" "main" {
+	subnet = "10.0.5.0/24"
 }
 
-resource "network" "k3s" {
-  subnet = "10.6.0.200"
+resource "copy" "lab" {
+  source = "github.com/instruqt/lab-examples//demo"
+  destination = data("lab")
 }
 
-resource "aws_account" "my_account" {
-  user_iam_policy    = "user_iam_policy.json"
-  account_scp_policy = "account_scp_policy.json"
+resource "copy" "track" {
+  source = "github.com/instruqt/templates//instruqt-tracks/kubernetes"
+  destination = data("track")
 }
 
-resource "azure_subscription" "my_subscription" {
-  tags = {
-    "environment" = "production"
+resource "container" "workstation" {
+  image {
+    name = "gcr.io/instruqt/debian"
+  }
+
+  resources {
+    memory = "512"
+  }
+
+  command = ["tail", "-f", "/dev/null"]
+
+	network {
+		id = resource.network.main.meta.id
+	}
+
+  volume {
+    source = resource.copy.lab.destination
+    destination = "/root/lab"
+  }
+  volume {
+    source = resource.copy.track.destination
+    destination = "/root/track"
   }
 }

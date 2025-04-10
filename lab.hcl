@@ -26,15 +26,15 @@ resource "lab" "main" {
     timelimit {
       duration  = 15
       extend    = 0
-      showTimer = true
+      show_timer = true
     }
     idle {
       enabled     = true
       timeout     = 5
-      showWarning = true
+      show_warning = true
     }
     controls {
-      showStop = true
+      show_stop = true
     }
   }
 }
