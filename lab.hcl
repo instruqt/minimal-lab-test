@@ -22,7 +22,7 @@ resource "lab" "main" {
   }
 
   settings {
-    theme = "modern-dark"
+    theme = "modern_dark"
     timelimit {
       duration  = 15
       extend    = 0
