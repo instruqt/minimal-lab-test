@@ -24,13 +24,13 @@ resource "lab" "main" {
   settings {
     theme = "modern_dark"
     timelimit {
-      duration  = 15
+      duration  = 20
       extend    = 0
       show_timer = true
     }
     idle {
       enabled     = true
-      timeout     = 5
+      timeout     = 20
       show_warning = true
     }
     controls {
