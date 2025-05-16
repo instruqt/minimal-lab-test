@@ -19,18 +19,21 @@ resource "lab" "main" {
         reference = resource.page.instructions
       }
     }
+    chapter "untitled-chapter-1" {
+      title = "Untitled chapter 1"
+    }
   }
 
   settings {
     theme = "modern_dark"
     timelimit {
-      duration  = "20m"
-      extend    = "0"
+      duration   = "20m"
+      extend     = "0"
       show_timer = true
     }
     idle {
-      enabled     = true
-      timeout     = "20m"
+      enabled      = true
+      timeout      = "20m"
       show_warning = true
     }
     controls {
