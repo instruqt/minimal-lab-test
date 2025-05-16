@@ -21,6 +21,12 @@ resource "lab" "main" {
     }
     chapter "untitled-chapter-1" {
       title = "Untitled chapter 1"
+      page "untitled-page-1" {
+        title     = "Untitled page 1"
+        reference = resource.page.untitled-page-1
+      }
+    }
+    chapter "untitled-chapter-1" {
     }
   }
 
