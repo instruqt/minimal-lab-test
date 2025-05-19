@@ -21,6 +21,10 @@ resource "lab" "main" {
     }
     chapter "wololo" {
       title = "Wololo"
+      page "lolowo" {
+        title     = "Lolowo"
+        reference = resource.page.lolowo
+      }
     }
   }
 
