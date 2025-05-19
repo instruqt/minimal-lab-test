@@ -25,6 +25,10 @@ resource "lab" "main" {
         title     = "Lolowo"
         reference = resource.page.lolowo
       }
+      page "new-one-yo" {
+        title     = "new ONE yo"
+        reference = resource.page.new-one-yo
+      }
     }
   }
 
