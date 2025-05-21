@@ -1,6 +1,6 @@
 resource "lab" "main" {
   title       = "Wololo"
-  description = "sadsada"
+  description = ""
 
   layout "simple" {
     default   = true
