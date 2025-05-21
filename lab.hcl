@@ -19,6 +19,10 @@ resource "lab" "main" {
         reference = resource.page.instructions
         title     = "Instructions5"
       }
+      page "instructions6" {
+        title     = "Instructions6"
+        reference = resource.page.instructions
+      }
     }
   }
 
