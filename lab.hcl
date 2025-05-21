@@ -1,6 +1,6 @@
 resource "lab" "main" {
   title       = "Wololo"
-  description = "Maybe something here"
+  description = "sadsada"
 
   layout "simple" {
     default   = true
@@ -24,13 +24,13 @@ resource "lab" "main" {
   settings {
     theme = "modern_dark"
     timelimit {
-      duration  = "20m"
-      extend    = "0"
+      duration   = "20m"
+      extend     = "0"
       show_timer = true
     }
     idle {
-      enabled     = true
-      timeout     = "20m"
+      enabled      = true
+      timeout      = "20m"
       show_warning = true
     }
     controls {
