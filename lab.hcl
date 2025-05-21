@@ -17,7 +17,6 @@ resource "lab" "main" {
 
       page "instructions6" {
         reference = resource.page.instructions
-        title     = "Instructions6"
       }
     }
   }
