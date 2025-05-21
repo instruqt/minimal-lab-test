@@ -15,9 +15,9 @@ resource "lab" "main" {
     chapter "introduction" {
       title = "Introduction"
 
-      page "instructions2-1" {
+      page "instructions3" {
         reference = resource.page.instructions
-        title     = "Instructions2"
+        title     = "Instructions3"
       }
     }
   }
