@@ -19,6 +19,9 @@ resource "lab" "main" {
         reference = resource.page.instructions
       }
     }
+    chapter "example" {
+      title = "Example"
+    }
   }
 
   settings {
